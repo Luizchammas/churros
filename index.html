@@ -1,0 +1,254 @@
+# churros<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churros Delícia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(to right, #ff5722, #ff9800);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+
+        nav {
+            background-color: #ff5722;
+            display: flex;
+            justify-content: center;
+            padding: 15px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ff9800;
+        }
+
+        .container {
+            width: 85%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        h2 {
+            color: #ff5722;
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .product {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .product-item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .product-item:hover {
+            transform: scale(1.05);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .product-item h3 {
+            font-size: 1.6em;
+            color: #333;
+            margin: 15px;
+        }
+
+        .product-item p {
+            font-size: 1.2em;
+            color: #777;
+            margin: 0 15px 15px 15px;
+        }
+
+        .product-item span {
+            font-size: 1.4em;
+            color: #ff5722;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .cta {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .cta button {
+            background-color: #ff5722;
+            color: white;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta button:hover {
+            background-color: #e64a19;
+        }
+
+        .contact-form {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            background-color: #ff5722;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background-color: #e64a19;
+        }
+
+        footer {
+            background-color: #ff5722;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Churros Delícia</h1>
+        <p>O sabor irresistível que vai te conquistar!</p>
+        <img src="Luizchammas/churros/WhatsApp Image 2025-05-06 at 08.31.36.jpeg" alt="">
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Contato</a>
+    </nav>
+
+    <div class="container" id="home">
+        <h2>Bem-vindo ao Churros Delícia!</h2>
+        <p>Delicie-se com nossos churros fresquinhos, recheados com o melhor sabor! Se você ama churros, está no lugar certo.</p>
+
+        <div class="product">
+            <div class="product-item">
+                <img src="https://via.placeholder.com/500x300?text=Churro+Tradicional" alt="Churro Tradicional">
+                <h3>Churro Tradicional</h3>
+                <p>Clássico churro com açúcar e canela, aquele sabor que nunca sai de moda!</p>
+                <span>R$ 5,00</span>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/500x300?text=Churro+de+Chocolate" alt="Churro de Chocolate">
+                <h3>Churro de Chocolate</h3>
+                <p>Recheado com chocolate derretido e coberto com mais chocolate. Perfeito para os chocólatras!</p>
+                <span>R$ 7,00</span>
+            </div>
+            <div class="product-item">
+                <img src="https://via.placeholder.com/500x300?text=Churro+de+Doce+de+Leite" alt="Churro de Doce de Leite">
+                <h3>Churro de Doce de Leite</h3>
+                <p>Recheio cremoso de doce de leite, irresistível!</p>
+                <span>R$ 7,50</span>
+            </div>
+            <div class="product-item">
+                <img src="churros-especiais.jpeg" alt="Churros Especiais">
+                <h3>Churros Especiais</h3>
+                <p>Uma explosão de sabores com cobertura e recheio extra!</p>
+                <span>R$ 9,00</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta">
+        <p>Não perca tempo! Venha saborear o melhor churro da cidade!</p>
+        <button>Peça Agora</button>
+    </div>
+
+    <div class="container" id="contact">
+        <h2>Entre em Contato</h2>
+        <p>Tem alguma dúvida ou quer fazer um pedido? Preencha o formulário abaixo:</p>
+
+        <div class="contact-form">
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Churros Delícia &copy; 2025 | Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
